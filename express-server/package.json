@@ -1,0 +1,35 @@
+{
+  "name": "thesis-node-server",
+  "version": "0.0.1",
+  "description": "A node server project",
+  "main": "dist/app.js",
+  "apidoc": {
+    "title": "thesis node server api",
+    "url": "http://127.0.0.1:8600"
+  },
+  "scripts": {
+    "dev": "DEBUG=app* nodemon app.js",
+    "apidoc": "apidoc -i app/ -o apidoc/"
+  },
+  "author": "claviering <claviering@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "connect-redis": "^3.4.0",
+    "cookie-parser": "^1.4.4",
+    "ecdsa": "^0.7.0",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "futoin-hkdf": "^1.0.3",
+    "ip": "^1.1.5",
+    "log4js": "^4.0.2",
+    "mongoose": "^5.4.17",
+    "redis": "^2.8.0",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "apidoc": "^0.17.7",
+    "debug": "^4.1.1",
+    "pm2": "^3.4.1"
+  }
+}
